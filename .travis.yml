@@ -14,8 +14,6 @@ addons:
     - libffi-dev
     - shared-mime-info
     - python-virtualenv
-    - python-setuptools
-    - python-six
 install:
   - virtualenv --system-site-packages --setuptools ./venv
   - . ./venv/bin/activate
