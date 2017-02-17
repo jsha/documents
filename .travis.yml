@@ -16,16 +16,18 @@ addons:
     - python-virtualenv
     - python-setuptools
     - python-six
+install:
+  - virtualenv --system-site-packages --setuptools ./venv
+  - . ./venv/bin/activate
+  - mkdir ~/.fonts/
+  - cp -a assets/*.otf ~/.fonts/
+  - pip install -U pip
+  - pip install --user -r requirements.txt
+  - pip list
+
 script:
-- virtualenv --system-site-packages --setuptools ./venv
-- . ./venv/bin/activate
-- mkdir ~/.fonts/
-- cp -a assets/*.otf ~/.fonts/
-- pip install -U pip
-- pip install --user -r requirements.txt
-- pip list
-- make
-- make deploy
+  - make
+  - make deploy
 deploy:
   skip_cleanup: true
   local_dir: output
