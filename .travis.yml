@@ -22,7 +22,6 @@ script:
 - mkdir ~/.fonts/
 - cp -a assets/*.otf ~/.fonts/
 - pip install -U pip
-- pip install -U setuptools
 - pip install --user -r requirements.txt
 - pip list
 - make
