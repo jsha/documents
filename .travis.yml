@@ -20,7 +20,7 @@ install:
   - mkdir ~/.fonts/
   - cp -a assets/*.otf ~/.fonts/
   - ./venv/bin/pip install -U pip
-  - ./venv/bin/pip install -r requirements.txt
+  - ./venv/bin/pip install --ignore-installed -r requirements.txt
   - ./venv/bin/pip list
 
 script:
