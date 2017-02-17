@@ -24,6 +24,7 @@ script:
 - pip install -U pip
 - pip install -U setuptools
 - pip install --user -r requirements.txt
+- pip list
 - make
 - make deploy
 deploy:
