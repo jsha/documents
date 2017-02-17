@@ -15,7 +15,7 @@ addons:
     - libffi-dev
     - shared-mime-info
     - python-virtualenv
-install:
+script:
   - virtualenv --setuptools ./venv
   - . ./venv/bin/activate
   - mkdir ~/.fonts/
@@ -23,8 +23,6 @@ install:
   - ./venv/bin/pip install -U pip
   - ./venv/bin/pip install --ignore-installed -r requirements.txt
   - ./venv/bin/pip list
-
-script:
   - make
   - make deploy
 deploy:
