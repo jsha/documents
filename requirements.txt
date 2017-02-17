@@ -1,2 +1,3 @@
+setuptools==18.5
 weasyprint==0.34
 CairoSVG==1.0.20
