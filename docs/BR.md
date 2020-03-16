@@ -685,7 +685,7 @@ Confirming the Applicant's control over the FQDN by validating the Applicant is 
 
 ##### 3.2.2.4.13: Email to DNS CAA Contact
 
-Confirming the Applicant's control over the FQDN by sending a Random Value via email and then receiving a confirming response utilizing the Random Value. The Random Value MUST be sent to a DNS CAA Email Contact.  The relevant CAA Resource Record Set MUST be found using the search algorithm defined in RFC 8659 Section 4.
+Confirming the Applicant's control over the FQDN by sending a Random Value via email and then receiving a confirming response utilizing the Random Value. The Random Value MUST be sent to a DNS CAA Email Contact.  The relevant CAA Resource Record Set MUST be found using the search algorithm defined in RFC 8659 Section 3.
 
 Each email MAY confirm control of multiple FQDNs, provided that each email address is a DNS CAA Email Contact for each Authorization Domain Name being validated.  The same email MAY be sent to multiple recipients as long as all recipients are DNS CAA Email Contacts for each Authorization Domain Name being validated.
 
